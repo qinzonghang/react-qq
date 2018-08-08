@@ -4,7 +4,7 @@ export default class my extends Component {
     render() {
         return (
             <div className="my-wrap">
-                my
+               推荐
             </div>
         )
     }
