@@ -42,7 +42,6 @@ export default class music extends Component {
         getMusicList()
         .then(res=>res.json())
         .then(json=>{
-            console.log('------json',json)
             this.setState({
                 list : json.data.topList
             })

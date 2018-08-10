@@ -25,3 +25,7 @@ export const getRecommendList = ()=> {
 export const getMusicList = ()=> {
     return sendRequest('https://www.easy-mock.com/mock/5af661177138d57c901e916b/request1/rankList')
 }
+//歌曲数据
+export const getSongList = ()=> {
+    return sendRequest('https://www.easy-mock.com/mock/5b6b96917a1a0e6a42b3bd04/example/mock')
+}
