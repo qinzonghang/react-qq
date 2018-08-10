@@ -1,0 +1,54 @@
+.music-wrap{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    overflow-y: scroll;
+    .children{
+        width: 100%;
+        height: 2rem;
+        background: #fff;
+        margin-top:.2rem;
+        display: flex;
+    }
+}
+.imgs{
+    width: 2rem;
+    height: 2rem;
+    img{
+        width: 100%;
+        display: block;
+    }
+}
+.songer-box{
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 .2rem;
+    justify-content: space-between;
+    align-items: center;
+    .songer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .songlister{
+            width: 96%;
+            flex: 1;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            //white-space: nowrap;
+            span,b{
+                margin-right:.1rem;
+            }
+            b,.singername{
+                color: #666;
+            }
+        }
+        .topTitle{
+            font-weight: 600;
+            font-size: .3rem;
+        }
+    }
+}

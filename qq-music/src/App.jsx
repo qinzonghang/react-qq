@@ -29,6 +29,7 @@ class App extends Component {
         super(props)
         this.state={
             options : ["推荐","音乐馆","发现"] ,
+            mySwiper:null
         }
     }
   render() {
@@ -52,7 +53,7 @@ class App extends Component {
             </div>
              </header>
              <section>
-             <div className="swiper-container">
+             <div className="swiper-container App-swiper">
                     <div className="swiper-wrapper">
                         <div className="swiper-slide">
                            <My/>
@@ -70,23 +71,22 @@ class App extends Component {
           </div>
   }
   componentDidMount(){
-    this.swiper = new Swiper('.swiper-container', {
+    this.mySwiper = new Swiper('.App-swiper', {
       on: {
           slideChangeTransitionEnd: function(){
-            console.log(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+            //console.log(this.activeIndex);//切换结束时，告诉我现在是第几个slide
             Store.dispatch({ //redux更新数据
               type:"options",
               n:this.activeIndex
             })
-          },
-        },
+          }
+        }
   })
-  this.swiper.slideTo(1,0,false) //最初显示音乐馆页面
+  this.mySwiper.slideTo(1,0,false);
   }
   Click(index){
-    console.log('------index',index)
-    var mySwiper = new Swiper('.swiper-container');
-    mySwiper.slideTo(index, 1000, false)
+    this.mySwiper.slideTo(index, 1000, false)
+  
     Store.dispatch({ //redux更新数据
       type:"options",
       n:index

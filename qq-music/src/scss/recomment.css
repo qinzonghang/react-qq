@@ -1,0 +1,73 @@
+.my-wrap {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper img {
+  width: 100%;
+  display: block;
+}
+
+.song {
+  width: 100%;
+  height: 9rem;
+  box-sizing: border-box;
+  padding: 0 .2rem;
+  background: #eee;
+}
+
+.song p {
+  width: 100%;
+  height: .55rem;
+  line-height: .55rem;
+  font-size: .3rem;
+  font-weight: 700;
+  color: #999;
+  border-bottom: solid 1px #31c27c;
+}
+
+.childrens {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: .2rem;
+}
+
+.childrens .children {
+  width: 49%;
+  height: 4.5rem;
+  background: #fff;
+}
+
+.childrens .children span {
+  display: block;
+  margin: .2rem 0 0 .2rem;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.img .icon {
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: .2rem;
+  bottom: .1rem;
+  font-size: .6rem;
+  color: #fff;
+}
+
+.img img {
+  width: 100%;
+  display: block;
+}
